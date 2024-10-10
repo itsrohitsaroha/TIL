@@ -13,5 +13,7 @@
     echo "HEAD / HTTP/1.0" >/dev/tcp/localhost/8000
     echo "HEAD / HTTP/1.0" >/dev/tcp/<server>/<port>
     ```
-
+  * [Reverse shells in bash](https://hypothetical.me/post/reverse-shell-in-bash/)
+  * [TCP connections in ZSH ->](https://hypothetical.me/post/zsh-tcp/)
+    
 
