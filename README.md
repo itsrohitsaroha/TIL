@@ -15,5 +15,15 @@
     ```
   * [Reverse shells in bash](https://hypothetical.me/post/reverse-shell-in-bash/)
   * [TCP connections in ZSH ->](https://hypothetical.me/post/zsh-tcp/)
+ 
+*  Rsync command to transfer file from local to server
+  *
+    ```
+    rsync -avz <file-name> username@remote-server:/home/ubuntu
+    ```
+  * ```
+    rsync -avz -e "ssh -i /path/to/private_key" /path/to/local/file username@remote-server:/path/to/remote/destination
+    ```
+
     
 
