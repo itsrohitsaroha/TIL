@@ -24,6 +24,21 @@
   * ```
     rsync -avz -e "ssh -i /path/to/private_key" /path/to/local/file username@remote-server:/path/to/remote/destination
     ```
+ * Linux get output of the last command (print 1 if failure and 0 if last command was success)
+     ```
+      echo $?
+     ```
+ * Postman scripts
+   ```
+   option1:
+     var jsonData = JSON.parse(responseBody);
+     postman.setEnvironmentVariable("authToken", jsonData.token);
+
+   option2:
+     let responseData = pm.response.json();
+     let orgId = responseData.data.org_id;
+     pm.collectionVariables.set("org_id", orgId);
+   ```
 
     
 
