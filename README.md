@@ -39,6 +39,21 @@
      let orgId = responseData.data.org_id;
      pm.collectionVariables.set("org_id", orgId);
    ```
-
+  * kubernetes alias
+    ```
+    alias klogst=kubectl logs -f --tail=30
+    # kubernetes admin token
+    alias kat=kubectl -n kubernetes-dashboard create token admin-user | pbcopy
+    ```
+ * Decode base64 cert and describe it
+    ```
+    alias decodecert="pbpaste | base64 --decode > ~/Downloads/temp.crt && openssl x509 -in ~/Downloads/temp.crt -noout -text; rm -rf ~/Downloads/temp.crt"
+    alias cert="pbpaste > ~/Downloads/temp.crt && openssl x509 -in ~/Downloads/temp.crt -noout -text; rm -rf ~/Downloads/temp.crt"
+    ```
+ * convert RSA key to normal key
+    ```
+    openssl pkcs8 -topk8 -inform PEM -outform PEM -in key-file-name.txt -out output-key-file-name.txt -nocrypt
+    ```
+  
     
 
