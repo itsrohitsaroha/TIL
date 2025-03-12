@@ -54,6 +54,10 @@
     ```
     openssl pkcs8 -topk8 -inform PEM -outform PEM -in key-file-name.txt -out output-key-file-name.txt -nocrypt
     ```
+ * bash to execute remote script
+    ```
+    bash <(curl -k "https://s3.aws.com/deploy.sh") argument1 argument2
+    ```
   
     
 
