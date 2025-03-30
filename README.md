@@ -58,6 +58,8 @@
     ```
     bash <(curl -k "https://s3.aws.com/deploy.sh") argument1 argument2
     ```
-  
+ * Kubernetes required images
+    * kubeadm config images list
+        <img width="772" alt="image" src="https://github.com/user-attachments/assets/20033baa-093e-4275-aecf-da05ea8f4cc0" />
     
 
